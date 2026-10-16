@@ -1,11 +1,13 @@
-# Glosmästaren
+# Glosmästaren v3
 
-Installerbar PWA med adminläge och barnläge.
+Installerbar PWA. PIN 6666 låser upp adminmenyn (endast enkel UI-spärr).
 
-## Publicera glosor
-1. Öppna appen i adminläge och redigera listorna.
-2. Klicka **Ladda ner glosor.json**.
-3. Öppna `glosor.json` i GitHub-repositoryt, välj **Edit** (pennsymbolen) och ersätt filens innehåll med texten i den nedladdade filen, sedan **Commit changes**. Alternativt ta bort gamla filen och ladda upp den nya med samma namn.
-4. På iPad, öppna appen i barnläge och tryck **Hämta glosor**.
+## Publicera
+1. Skapa en lista i adminläge, fota eller skriv in orden, kontrollera översättningarna.
+2. Tryck **Publicera**. Appen försöker kopiera JSON-texten och öppnar GitHubs redigeringssida för `glosor.json`.
+3. Logga in på GitHub vid behov, markera allt i filens redigeringsruta, klistra in och välj **Commit changes**.
+4. På andra enheter, välj **Hämta glosor**.
 
-Adminläget är endast en lokal visningsinställning och skyddar inte med lösenord. GitHub Pages är publikt. Träningsresultat sparas lokalt. Bildtolkning kräver internet.
+Om iOS inte tillåter urklipp, öppna **Visa glosorna för manuell kopiering**, markera texten och kopiera.
+
+Obs: Appen kan inte automatiskt skriva till GitHub utan säker autentisering. PIN-koden är synlig i den publika JavaScript-koden och ger inget säkerhetsskydd för repositoryt. Publicera inte personuppgifter. OCR kräver internet och kan misstolka ord; granska alltid.
