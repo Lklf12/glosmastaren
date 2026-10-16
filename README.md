@@ -11,3 +11,5 @@ Installerbar PWA. PIN 6666 låser upp adminmenyn (endast enkel UI-spärr).
 Om iOS inte tillåter urklipp, öppna **Visa glosorna för manuell kopiering**, markera texten och kopiera.
 
 Obs: Appen kan inte automatiskt skriva till GitHub utan säker autentisering. PIN-koden är synlig i den publika JavaScript-koden och ger inget säkerhetsskydd för repositoryt. Publicera inte personuppgifter. OCR kräver internet och kan misstolka ord; granska alltid.
+
+Version 3.1: Fixar PIN-dialogen (window.prompt) och uppdaterar offlinecache.

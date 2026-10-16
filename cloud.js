@@ -10,7 +10,7 @@ const status=s=>{$('cloudStatus').textContent=s};
 const role=()=>sessionStorage.getItem(adminSession)==='yes'?'admin':'child';
 function setRole(r){
   if(r==='admin'&&sessionStorage.getItem(adminSession)!=='yes'){
-    const entry=prompt('Ange PIN-kod för adminläge:');
+    const entry=window.prompt('Ange PIN-kod för adminläge:');
     if(entry!==pin){alert('Fel PIN-kod eller avbrutet.');r='child'}
     else sessionStorage.setItem(adminSession,'yes');
   }
