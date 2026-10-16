@@ -8,12 +8,7 @@ const githubEdit='https://github.com/Lklf12/glosmastaren/edit/main/glosor.json';
 const url='./glosor.json';
 const status=s=>{$('cloudStatus').textContent=s};
 const role=()=>sessionStorage.getItem(adminSession)==='yes'?'admin':'child';
-function setRole(r){
-  if(r==='admin'&&sessionStorage.getItem(adminSession)!=='yes'){
-    const entry=window.prompt('Ange PIN-kod för adminläge:');
-    if(entry!==pin){alert('Fel PIN-kod eller avbrutet.');r='child'}
-    else sessionStorage.setItem(adminSession,'yes');
-  }
+function applyRole(r){
   if(r!=='admin')sessionStorage.removeItem(adminSession);
   localStorage.setItem(roleKey,r);
   $('roleSelect').value=r;
@@ -22,6 +17,31 @@ function setRole(r){
   if(!admin&&!$('lists').classList.contains('hidden'))document.querySelector('[data-tab="practice"]').click();
   status(admin?'Adminläge: redigera lokalt och välj Publicera när listan är klar.':'Träningsläge: hämta publicerade glosor från GitHub.');
 }
+function setRole(r){
+  if(r==='admin'&&sessionStorage.getItem(adminSession)!=='yes'){
+    $('roleSelect').value='child';
+    $('adminPin').value='';
+    $('pinError').textContent='';
+    $('pinDialog').classList.remove('hidden');
+    $('adminPin').focus();
+    return;
+  }
+  $('pinDialog').classList.add('hidden');
+  applyRole(r);
+}
+$('pinForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  if($('adminPin').value===pin){
+    sessionStorage.setItem(adminSession,'yes');
+    setRole('admin');
+  }else{
+    $('pinError').textContent='Fel PIN-kod. Försök igen.';
+    $('adminPin').value='';
+    $('adminPin').focus();
+  }
+});
+$('pinCancel').addEventListener('click',()=>setRole('child'));
+
 async function refresh(){
  status('Hämtar gloslistor från GitHub…');
  try{
