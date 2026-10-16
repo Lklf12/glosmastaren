@@ -1,5 +1,6 @@
 {
   "version": 1,
+  "updated": "2026-10-16T18:37:59.037Z",
   "lists": [
     {
       "id": "unit-2-chapter-1",
@@ -64,6 +65,132 @@
         [
           "lay",
           "lägger"
+        ],
+        [
+          "ocean rubbish",
+          "skräp i havet"
+        ],
+        [
+          "coral reef",
+          "korallrev"
+        ],
+        [
+          "decompose",
+          "brytas ner"
+        ],
+        [
+          "collects",
+          "samlas upp"
+        ],
+        [
+          "eventually",
+          "till sist, slutligen"
+        ],
+        [
+          "garbage",
+          "sopor, skräp"
+        ],
+        [
+          "France",
+          "Frankrike"
+        ],
+        [
+          "several",
+          "flera"
+        ],
+        [
+          "companies",
+          "företag"
+        ],
+        [
+          "striped",
+          "randiga"
+        ],
+        [
+          "gear",
+          "utrustning"
+        ],
+        [
+          "spotted",
+          "prickiga"
+        ],
+        [
+          "octopus",
+          "bläckfisk"
+        ],
+        [
+          "swims by",
+          "simmar förbi"
+        ],
+        [
+          "great fun",
+          "riktigt roligt"
+        ]
+      ]
+    },
+    {
+      "id": "ffb4d7d2-059e-4568-800c-05068021507b",
+      "name": "V43",
+      "words": [
+        [
+          "ocean rubbish",
+          "skräp i havet"
+        ],
+        [
+          "coral reef",
+          "korallrev"
+        ],
+        [
+          "decompose",
+          "brytas ner"
+        ],
+        [
+          "collects",
+          "samlas upp"
+        ],
+        [
+          "eventually",
+          "till sist, slutligen"
+        ],
+        [
+          "garbage",
+          "sopor, skräp"
+        ],
+        [
+          "France",
+          "Frankrike"
+        ],
+        [
+          "several",
+          "flera"
+        ],
+        [
+          "companies",
+          "företag"
+        ],
+        [
+          "striped",
+          "randiga"
+        ],
+        [
+          "gear",
+          "utrustning"
+        ],
+        [
+          "spotted",
+          "prickiga"
+        ],
+        [
+          "octopus",
+          "bläckfisk"
+        ],
+        [
+          "swims by",
+          "simmar förbi"
+        ],
+        [
+          "great fun",
+          "riktigt roligt"
         ]
       ]
     }
